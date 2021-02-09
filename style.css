@@ -1,6 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@600&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600&display=swap');
 
+/* DESKTOP - width 1440px */
+
 body{
     background-color: hsl(210, 46%, 95%);
     margin: 15% 10% 15% 10%;
@@ -33,7 +35,6 @@ body{
     color: hsl(217, 19%, 35%);
     border : 1px solid hsl(0, 0%, 81%, 0.5);
     box-shadow: 10px 10px 25px hsl(0, 0%, 81%, 0.5);
-    
 }
 
 .container3, .container4{
@@ -59,7 +60,6 @@ body{
 .name&status{
     margin-top: 10%;
     height: 31px;
-    
 }
 
 .name{
@@ -88,7 +88,6 @@ body{
     opacity : 0.7;
 }
 
-
 /* Daniel Clifford */
 
 .container1{
@@ -112,6 +111,7 @@ body{
     background-color: hsl(217, 19%, 35%);
     grid-area: container2;
 }
+
 /* Jeanette Harmon */
 
 .container3{
@@ -140,4 +140,32 @@ body{
     background-color: hsl(0, 0%, 100%);
     grid-area: container5;
     padding-bottom: 20px;
+}
+
+/* MOBILE - Width 375px */
+
+@media only screen and (max-width: 375px){
+    body{
+        margin: 15% 5% 15% 7%;
+        grid-template-columns: 0.5fr;
+        grid-template-rows: 0.8fr 0.5fr 0.5fr 0.8fr 1fr;
+        grid-template-areas: 
+            "container1"
+            "container2"
+            "container3"
+            "container4"
+            "container5"
+    }
+    
+    .container1, .container2, .container3, .container4, .container5{
+        width: 275px;
+    }
+    
+    .name&status{
+        width: 70px;
+    }
+    
+    .quotation-marks{
+        margin-left: 10px;
+    }  
 }
