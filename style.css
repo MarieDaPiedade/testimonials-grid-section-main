@@ -57,8 +57,7 @@ body{
     margin-right: 5%;
 }
 
-.name&status{
-    margin-top: 10%;
+.name_status{
     height: 31px;
 }
 
@@ -144,7 +143,7 @@ body{
 
 /* MOBILE - Width 375px */
 
-@media only screen and (max-width: 375px){
+@media only screen and (max-width: 600px){
     body{
         margin: 15% 5% 15% 7%;
         grid-template-columns: 0.5fr;
@@ -161,7 +160,7 @@ body{
         width: 275px;
     }
     
-    .name&status{
+    .name_status{
         width: 70px;
     }
     
